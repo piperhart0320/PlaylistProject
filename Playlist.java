@@ -1,5 +1,11 @@
-import java.util.ArrayList;
 
+/**
+ * Write a description of class Playlist here.
+ *
+ * @author Morgan and Piper
+ * @version (a version number or a date)
+ */
+import java.util.ArrayList;
 /**
  * The Playlist class, which will keep track of a playlist of Song objects
  * Refer to the project description to make sure you have access to all available methods

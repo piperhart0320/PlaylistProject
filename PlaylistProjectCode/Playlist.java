@@ -3,7 +3,7 @@
  * Write a description of class Playlist here.
  *
  * @author Morgan and Piper
- * @version (a version number or a date)
+ * @version 1/18/24
  */
 import java.util.ArrayList;
 /**
@@ -15,9 +15,7 @@ public class Playlist {
      * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
      * (CarDealership, Zoo) for structure on how this will look
      */
-
-
-
+    private ArrayList<Playlist> playlist;
 
      /**
       * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
