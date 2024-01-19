@@ -3,15 +3,19 @@
  * playlist in the main method. You don't need to follow the testing specifications of this exactly
  * if you want to write your own separate tester instead.
  * Note that there's no need for a Scanner in this project-- all of the playlist can be 'hardcoded' into main.
- * @author
- * @version
+ * @author Morgan and Piper
+ * @version 1/19/24
  */
 public class PlaylistTester {
     public static void main(String[] args) {
         System.out.println("Initializing a Playlist...\n");
         //Make your playlist here
+        Playlist myplay = new Playlist();
 
         System.out.println("Adding songs to the Playlist...\n");
+        myplay.addSong("Ventura Highway", "America", "2:22");
+        myplay.addSong("Willow", "Taylor Swift", "3:01");
+        myplay.addSong("Sound of Silence", "Simon and Garfunkel", "4:38");
         /**
          * Add some songs here. Note that the format for adding a Song to a Playlist p
          * is something like...
@@ -22,11 +26,12 @@ public class PlaylistTester {
 
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
-
+        myplay.allSongs();
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
-
+        myplay.likeSong(1);
+        myplay.likeSong(3);
 
         System.out.println("Printing the songs...\n");
 
