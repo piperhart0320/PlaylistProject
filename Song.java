@@ -60,10 +60,18 @@ public class Song
         double seconds = 0;
         String minutes = duration.substring(0, duration.indexOf(":"));
         seconds += Integer.parseInt(minutes) * 60;
-        String secondsPart = duration.substring(0, duration.indexOf(":") + 1);
+        String secondsPart = duration.substring(duration.indexOf(":")+1, duration.length()-1); 
         seconds += Integer.parseInt(secondsPart);
-        System.out.println(seconds); 
         return seconds;     
         
     }
 }
+
+   // public double getDuration()
+   // {
+      //  double seconds = 0; 
+    //    String minutes = duration.substring(0, duration.indexOf(":"));
+       // seconds += Integer.parseInt(minutes); 
+      //  String seconds2 = duration.substring(duration.indexOf(":")+1, duration.length()-1); 
+   // }
+//}
