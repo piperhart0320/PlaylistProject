@@ -24,32 +24,41 @@ public class PlaylistTester {
 
 
 
+
         System.out.println("Printing the songs...\n");
         //Print out all the songs in the playlist to verify it's working correctly
-        myplay.allSongs();
+        System.out.println(myplay.allSongs());
 
         System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
         myplay.likeSong(1);
-        myplay.likeSong(3);
+        myplay.likeSong(2);
 
         System.out.println("Printing the songs...\n");
-        myplay.allSongs(); 
+        System.out.println(myplay.allSongs()); 
 
 
         System.out.println("\nRemoving the song in position A, B, C, etc...\n");
-        myplay.removeSong(3); 
+        myplay.removeSong(1); 
 
         System.out.println("Printing the songs...\n");
-        myplay.allSongs(); 
+        System.out.println(myplay.allSongs()); 
 
         System.out.println("\nPrinting only the liked songs...\n");
         //Your Playlist should be able to do this without looping while in main!
+<<<<<<< HEAD
         myplay.allLikedSongs(); 
 
         System.out.println("\nPrinting the total duration of all songs...\n");
         //Note that the format should look something like minutes:seconds
         myplay.duration(); 
+=======
+        System.out.println(myplay.allLikedSongs()); 
+
+        System.out.println("\nPrinting the total duration of all songs...\n");
+        //Note that the format should look something like minutes:seconds
+        System.out.println(myplay.duration()); 
+>>>>>>> piper
 
         System.out.println("\nRemoving all unliked songs from the playlist...\n");
         //This should be doable with a single method call
@@ -57,6 +66,10 @@ public class PlaylistTester {
 
         System.out.println("Printing all songs...\n");
         //This should now look like only the liked songs list from before
+<<<<<<< HEAD
         myplay.allSongs(); 
+=======
+        System.out.println(myplay.allSongs()); 
+>>>>>>> piper
     }
 }

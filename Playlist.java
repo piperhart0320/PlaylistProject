@@ -47,12 +47,16 @@ public class Playlist
     }
     public String allSongs()
     {
-        String names = "";
+        String fullList = "";
         for (int i = 0; i < playlist.size(); i++)
         {
-            names = names + (playlist.get(i));
+            fullList += playlist.get(i).getName() + " by ";
+            fullList += playlist.get(i).getSinger() + " ("; 
+            fullList += playlist.get(i).getDuration() + ") "; 
+            
         }
-        return names;
+
+        return fullList;
     }
     public String allLikedSongs()
     {
@@ -61,7 +65,9 @@ public class Playlist
         {
             if (playlist.get(i).isLiked());
             {
-            likednames = likednames + (playlist.get(i));
+                likednames += playlist.get(i).getName() + " by ";
+                likednames += playlist.get(i).getSinger() + " ("; 
+                likednames += playlist.get(i).getDuration() + ") "; 
             }
         }
         return likednames;
@@ -71,7 +77,7 @@ public class Playlist
         int duration = 0;
         for (int i = 0; i < playlist.size(); i++)
         {
-            duration += duration + playlist.get(i).calcDuration();
+            duration += playlist.get(i).calcDuration();
         }
         return duration;
     }
