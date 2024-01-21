@@ -62,6 +62,8 @@ public class Song
         seconds += Integer.parseInt(minutes) * 60;
         String secondsPart = duration.substring(0, duration.indexOf(":") + 1);
         seconds += Integer.parseInt(secondsPart);
-        return seconds; 
+        System.out.println(seconds); 
+        return seconds;     
+        
     }
 }
