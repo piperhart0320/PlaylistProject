@@ -29,7 +29,7 @@ public class PlaylistTester {
         //Print out all the songs in the playlist to verify it's working correctly
         System.out.println(myplay.allSongs());
 
-        System.out.println("\nLiking the songs in position X, Y, Z, etc....\n");
+        System.out.println("\nLiking the songs in position 2 and 3....\n");
         //Once your songs are 'liked', this should be reflected in the next printout
         myplay.likeSong(1);
         myplay.likeSong(2);
@@ -38,7 +38,7 @@ public class PlaylistTester {
         System.out.println(myplay.allSongs()); 
 
 
-        System.out.println("\nRemoving the song in position A, B, C, etc...\n");
+        System.out.println("\nRemoving the song in position 2...\n");
         myplay.removeSong(1); 
 
         System.out.println("Printing the songs...\n");

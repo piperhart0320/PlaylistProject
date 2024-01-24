@@ -52,8 +52,8 @@ public class Playlist
         {
             fullList += playlist.get(i).getName() + " by ";
             fullList += playlist.get(i).getSinger() + " ("; 
-            fullList += playlist.get(i).getDuration() + ") "; 
-            
+            fullList += playlist.get(i).getDuration() + ") \r\n"; 
+
         }
 
         return fullList;
